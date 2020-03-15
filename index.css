@@ -1,0 +1,32 @@
+.reg-content{
+    margin:50px 40px;
+    font-size: 15px;
+}
+.reg-content input{
+    padding:10px;
+    width:280px;
+    border-radius: 2px;
+    border:1px solid #ccc;
+}
+.reg-content input:focus{
+    border-color:blue;
+}
+#msg{
+    width:150px;
+}
+.reg-content .btn{
+    width:115px;
+    margin-left: 20px;
+}
+.reg-content .btn2{
+    width:370px;
+    margin-top: 40px;
+    border-radius: 30px;
+    color:#ffffff;
+    background-color: royalblue;
+}
+.reg-content span{
+    margin-left: 65px;
+    color:red;
+    font-size: 13px;
+}
