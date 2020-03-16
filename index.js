@@ -22,10 +22,11 @@ $(function(){
     $pwd.focusout(function(){
         checkPwd();
     });
-
+    var timer;
     $btn1.click(function(){
         $data4.html('');
         if(checkTel()){
+            clearTimeout(timer);
             var num=30;
             $btn1.val('重新获取（30）');
             $btn1.attr('disabled','disabled');
@@ -43,7 +44,7 @@ $(function(){
             },1000);
         }
         else{
-            var timer=setTimeout(function(){
+            timer=setTimeout(function(){
             if($msg.val()===''){
                 $data4.html('请求超时，请稍后再试');
                 clearTimeout(timer);
