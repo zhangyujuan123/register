@@ -37,7 +37,9 @@ $(function(){
                     clearInterval(timer1);
                     $btn1.val('获取验证码');
                     $btn1.removeAttr('disabled');
-                    $data4.html('请求超时，请稍后再试');
+                    if($msg.val()===''){
+                        $data4.html('请求超时，请稍后再试');
+                    }
                 }else{
                     $btn1.val('重新获取（'+num+')');
                 }
